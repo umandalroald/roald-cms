@@ -4,7 +4,7 @@ function App() {
   return (
     <Container maxWidth="sm">
       <Typography variant="h4" gutterBottom>
-        Welcome to My Blog
+        Welcome to Roald
       </Typography>
       <Button variant="contained" color="primary">
         Get Started
