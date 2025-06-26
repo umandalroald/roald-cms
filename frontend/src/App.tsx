@@ -13,6 +13,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
+import Hero from './components/Hero';
 
 interface Props {
   /**
@@ -23,7 +28,18 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Projects', 'Expertise', 'AI Research', 'Contact'];
+const navItems = ['Home', 'About', 'Blog', 'Contact'];
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: (theme.vars ?? theme).palette.text.secondary,
+  ...theme.applyStyles('dark', {
+    backgroundColor: '#1A2027',
+  }),
+}));
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -36,7 +52,7 @@ export default function DrawerAppBar(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        ROALD UMANDAL
+        OXYGEN
       </Typography>
       <Divider />
       <List>
@@ -54,9 +70,10 @@ export default function DrawerAppBar(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', width: '100%' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: 'rgb(15 23 42 / 90%)' }}>
+      <AppBar component="nav" sx={{ backgroundColor: 'rgb(15 23 42 / 100%)' }}>
+        <Container disableGutters sx={{ maxWidth: '1200px', mx: 'auto' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -72,7 +89,7 @@ export default function DrawerAppBar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            ROALD UMANDAL
+            OXYGEN
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -82,6 +99,7 @@ export default function DrawerAppBar(props: Props) {
             ))}
           </Box>
         </Toolbar>
+        </Container>
       </AppBar>
       <nav>
         <Drawer
@@ -100,11 +118,7 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
-        <Typography>
-        </Typography>
-      </Box>
+      <Hero />
     </Box>
   );
 }
