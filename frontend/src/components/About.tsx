@@ -39,7 +39,7 @@ const About = () => {
           </Grid>
           {/* Right: Skills Grid */}
           <Grid size={{ xs:16, sm:12, md:6 }} sx={{ mt: 7 }}>
-            <Grid container spacing={{ xs: 12, sm:6, md: 3 }}>
+            <Grid container spacing={{ xs: 6, sm:3, md: 2 }}>
               <Grid size={{ xs:16, sm:12, md:6 }} key="pl">
                 <Item>
                   <Typography gutterBottom variant="h6" component="div">Programming Languages</Typography>
