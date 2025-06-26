@@ -19,6 +19,7 @@ import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Hero from './components/Hero';
 import About from './components/About';
+import Project from './components/Project';
 
 interface Props {
   /**
@@ -123,6 +124,9 @@ export default function DrawerAppBar(props: Props) {
           <Hero />
           <Box sx={{ mt: 2 }}>
             <About />
+          </Box>
+          <Box sx={{ mt: 2 }}>
+            <Project />
           </Box>
         </Box>
     </Box>
