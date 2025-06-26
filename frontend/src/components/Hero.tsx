@@ -16,7 +16,7 @@ const Hero = () => {
         overflowX: 'hidden',
       }}
     >
-      <Container maxWidth="xl" disableGutters>
+      <Container maxWidth="xl" disableGutters sx={{ maxWidth: '1200px', mx: 'auto' }}>
         <Typography variant="h2" component="h1" gutterBottom>
           Welcome to My Blog
         </Typography>

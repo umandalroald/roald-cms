@@ -18,6 +18,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Hero from './components/Hero';
+import About from './components/About';
 
 interface Props {
   /**
@@ -118,7 +119,12 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      <Hero />
+        <Box sx={{ mt: { xs: 7, sm: 8 } }}>
+          <Hero />
+          <Box sx={{ mt: 2 }}>
+            <About />
+          </Box>
+        </Box>
     </Box>
   );
 }
