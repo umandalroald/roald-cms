@@ -49,7 +49,7 @@ const Footer = () => {
 
         <Box mt={4} textAlign="center">
           <Typography variant="body2" color="white">
-            © {new Date().getFullYear()} Your Company. All rights reserved.
+            © {new Date().getFullYear()} Oxygen Company. All rights reserved.
           </Typography>
         </Box>
       </Container>
