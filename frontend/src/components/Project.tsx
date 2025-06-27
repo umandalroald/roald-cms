@@ -4,6 +4,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea';
+import CardActions from '@mui/material/CardActions';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
 
 const Project = () => {
   return (
@@ -24,7 +29,6 @@ const Project = () => {
         <Grid container spacing={{ xs: 6, sm:3, md: 2 }}>
           <Grid size={{ xs:12, sm:8, md:4 }} key="pl">
             <Card sx={{ maxWidth: 400 }}>
-              <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
@@ -39,12 +43,28 @@ const Project = () => {
                     A comprehensive MLOps framework for managing machine learning workflows, from data preprocessing to model deployment. Features automated model versioning, A/B testing, and real-time monitoring.
                   </Typography>
                 </CardContent>
-              </CardActionArea>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Python" variant="outlined" />
+                    <Chip label="FastAPI" variant="outlined" />
+                    <Chip label="MLflow" variant="outlined" />
+                  </Stack>
+                </Box>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Docker" variant="outlined" />
+                    <Chip label="Kubernetes" variant="outlined" />
+                  </Stack>
+                 </Box>
+              <Divider />
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
             </Card>
           </Grid>
           <Grid size={{ xs:12, sm:8, md:4 }} key="ml">
             <Card sx={{ maxWidth: 400 }}>
-              <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
@@ -59,12 +79,28 @@ const Project = () => {
                     An intelligent analytics API that uses machine learning to automatically detect patterns, anomalies, and insights in time-series data. Built for real-time processing and scalability.
                   </Typography>
                 </CardContent>
-              </CardActionArea>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Python" variant="outlined" />
+                    <Chip label="TensorFlow" variant="outlined" />
+                    <Chip label="Redis" variant="outlined" />
+                  </Stack>
+                </Box>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="PostgreSQL" variant="outlined" />
+                    <Chip label="Celery" variant="outlined" />
+                  </Stack>
+                </Box>
+              <Divider />
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
             </Card>
           </Grid>
           <Grid size={{ xs:12, sm:8, md:4 }} key="cloud">
             <Card sx={{ maxWidth: 400 }}>
-              <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
@@ -79,12 +115,28 @@ const Project = () => {
                     An automated code review tool that uses natural language processing to analyze code quality, suggest improvements, and detect potential security vulnerabilities.
                   </Typography>
                 </CardContent>
-              </CardActionArea>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Python" variant="outlined" />
+                    <Chip label="Scikit-learn" variant="outlined" />
+                    <Chip label="InfluxDB" variant="outlined" />
+                  </Stack>
+                </Box>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Grafana" variant="outlined" />
+                    <Chip label="MQTT" variant="outlined" />
+                  </Stack>
+                </Box>
+              <Divider />
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
             </Card>
           </Grid>
-          <Grid size={{ xs:12, sm:8, md:4 }} key="leadership">
+          <Grid size={{ xs:12, sm:8, md:4 }} key="maintenance">
             <Card sx={{ maxWidth: 400 }}>
-              <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
@@ -99,12 +151,28 @@ const Project = () => {
                     A machine learning system for predicting equipment failures using IoT sensor data. Implements ensemble methods and real-time alerting for industrial applications.
                   </Typography>
                 </CardContent>
-              </CardActionArea>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Python" variant="outlined" />
+                    <Chip label="Transformers" variant="outlined" />
+                    <Chip label="OpenAI API" variant="outlined" />
+                  </Stack>
+                </Box>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="AST" variant="outlined" />
+                    <Chip label="Github API" variant="outlined" />
+                  </Stack>
+                </Box>
+              <Divider />
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
             </Card>
           </Grid>
           <Grid size={{ xs:12, sm:8, md:4 }} key="leadership">
             <Card sx={{ maxWidth: 400 }}>
-              <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
@@ -119,12 +187,28 @@ const Project = () => {
                     A framework for distributed machine learning training across multiple nodes. Optimizes communication and reduces training time for large-scale deep learning models.
                   </Typography>
                 </CardContent>
-              </CardActionArea>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Python" variant="outlined" />
+                    <Chip label="PyTorch" variant="outlined" />
+                    <Chip label="Ray" variant="outlined" />
+                  </Stack>
+                </Box>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Kubernetes" variant="outlined" />
+                    <Chip label="Horovod" variant="outlined" />
+                  </Stack>
+                </Box>
+              <Divider />
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
             </Card>
           </Grid>
-          <Grid size={{ xs:12, sm:8, md:4 }} key="leadership">
+          <Grid size={{ xs:12, sm:8, md:4 }} key="engine">
             <Card sx={{ maxWidth: 400 }}>
-              <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
@@ -139,7 +223,24 @@ const Project = () => {
                     A hybrid recommendation system combining collaborative filtering and content-based approaches. Features real-time personalization and explainable AI capabilities.
                   </Typography>
                 </CardContent>
-              </CardActionArea>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Python" variant="outlined" />
+                    <Chip label="TensorFlow" variant="outlined" />
+                    <Chip label="Apache Spark" variant="outlined" />
+                  </Stack>
+                </Box>
+                <Box sx={{ p: .5 }}>
+                  <Stack direction="row" spacing={1}>
+                    <Chip label="Elasticsearch" variant="outlined" />
+                    <Chip label="FastAPI" variant="outlined" />
+                  </Stack>
+                </Box>
+              <Divider />
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
             </Card>
           </Grid>
         </Grid>
