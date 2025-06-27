@@ -20,6 +20,7 @@ import { styled } from '@mui/material/styles';
 import Hero from './components/Hero';
 import About from './components/About';
 import Project from './components/Project';
+import Footer from './components/Footer';
 
 interface Props {
   /**
@@ -120,15 +121,18 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-        <Box sx={{ mt: { xs: 7, sm: 8 } }}>
-          <Hero />
-          <Box sx={{ mt: 2 }}>
-            <About />
-          </Box>
-          <Box sx={{ mt: 2 }}>
-            <Project />
-          </Box>
+      <Box sx={{ mt: { xs: 7, sm: 8 } }}>
+        <Hero />
+        <Box sx={{ mt: 2 }}>
+          <About />
         </Box>
+        <Box sx={{ mt: 2 }}>
+          <Project />
+        </Box>
+        <Box sx={{ mt: 2 }}>
+          <Footer />
+        </Box>
+      </Box>
     </Box>
   );
 }
