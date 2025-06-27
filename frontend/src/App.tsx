@@ -21,6 +21,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import Expertise from './components/Expertise';
 
 interface Props {
   /**
@@ -128,6 +129,9 @@ export default function DrawerAppBar(props: Props) {
         </Box>
         <Box sx={{ mt: 2 }}>
           <Project />
+        </Box>
+        <Box sx={{ mt: 2 }}>
+          <Expertise />
         </Box>
         <Box sx={{ mt: 2 }}>
           <Footer />

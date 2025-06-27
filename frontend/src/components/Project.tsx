@@ -31,7 +31,7 @@ const Project = () => {
             <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="240"
                   image="https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="green iguana"
                 />
@@ -67,7 +67,7 @@ const Project = () => {
             <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="240"
                   image="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="green iguana"
                 />
@@ -103,7 +103,7 @@ const Project = () => {
             <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="240"
                   image="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="green iguana"
                 />
@@ -139,7 +139,7 @@ const Project = () => {
             <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="240"
                   image="https://plus.unsplash.com/premium_photo-1676637656166-cb7b3a43b81a?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="green iguana"
                 />
@@ -175,7 +175,7 @@ const Project = () => {
             <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="240"
                   image="https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=1700&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="green iguana"
                 />
@@ -211,7 +211,7 @@ const Project = () => {
             <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                   component="img"
-                  height="140"
+                  height="240"
                   image="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?q=80&w=2042&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="green iguana"
                 />
