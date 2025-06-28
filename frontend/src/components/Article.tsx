@@ -66,14 +66,14 @@ const Article = () => {
                     Developed an advanced NLP system that automatically categorizes and routes customer inquiries, reducing response time by 65% and improving customer satisfaction scores. The system uses transformer-based models fine-tuned on domain-specific data.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="FastAPI" variant="outlined" />
                     <Chip label="MLflow" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Docker" variant="outlined" />
                     <Chip label="Kubernetes" variant="outlined" />
@@ -102,14 +102,14 @@ const Article = () => {
                     Implemented a machine learning pipeline that predicts system failures before they occur, enabling proactive maintenance and reducing downtime by 40%. The solution combines time-series analysis with ensemble methods for robust predictions.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="TensorFlow" variant="outlined" />
                     <Chip label="Redis" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="PostgreSQL" variant="outlined" />
                     <Chip label="Celery" variant="outlined" />
@@ -138,14 +138,14 @@ const Article = () => {
                     Designed and deployed a computer vision system for automated quality control in manufacturing processes. The system achieves 99.2% accuracy in defect detection and has been instrumental in reducing manual inspection overhead.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="Scikit-learn" variant="outlined" />
                     <Chip label="InfluxDB" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Grafana" variant="outlined" />
                     <Chip label="MQTT" variant="outlined" />
@@ -174,14 +174,14 @@ const Article = () => {
                     Built an intelligent documentation assistant that helps developers find relevant information quickly using natural language queries. The system combines RAG (Retrieval-Augmented Generation) with custom embeddings for enhanced accuracy.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="Transformers" variant="outlined" />
                     <Chip label="OpenAI API" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="AST" variant="outlined" />
                     <Chip label="Github API" variant="outlined" />
@@ -210,14 +210,14 @@ const Article = () => {
                     A framework for distributed machine learning training across multiple nodes. Optimizes communication and reduces training time for large-scale deep learning models.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="PyTorch" variant="outlined" />
                     <Chip label="Ray" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Kubernetes" variant="outlined" />
                     <Chip label="Horovod" variant="outlined" />
@@ -246,14 +246,14 @@ const Article = () => {
                     A hybrid recommendation system combining collaborative filtering and content-based approaches. Features real-time personalization and explainable AI capabilities.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="TensorFlow" variant="outlined" />
                     <Chip label="Apache Spark" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Elasticsearch" variant="outlined" />
                     <Chip label="FastAPI" variant="outlined" />

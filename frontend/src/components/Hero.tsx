@@ -7,6 +7,8 @@ const Hero = () => {
       sx={{
         width: '100vw',
         minHeight: '100vh',
+//         backgroundImage: "url('https://plus.unsplash.com/premium_photo-1682756540097-6a887bbcf9b0?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+//         backgroundRepeat: "no-repeat",
         bgcolor: '#f9fafb',
         display: 'flex',
         alignItems: 'center',

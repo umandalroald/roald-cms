@@ -43,14 +43,14 @@ const Project = () => {
                     A comprehensive MLOps framework for managing machine learning workflows, from data preprocessing to model deployment. Features automated model versioning, A/B testing, and real-time monitoring.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="FastAPI" variant="outlined" />
                     <Chip label="MLflow" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Docker" variant="outlined" />
                     <Chip label="Kubernetes" variant="outlined" />
@@ -79,14 +79,14 @@ const Project = () => {
                     An intelligent analytics API that uses machine learning to automatically detect patterns, anomalies, and insights in time-series data. Built for real-time processing and scalability.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="TensorFlow" variant="outlined" />
                     <Chip label="Redis" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="PostgreSQL" variant="outlined" />
                     <Chip label="Celery" variant="outlined" />
@@ -115,14 +115,14 @@ const Project = () => {
                     An automated code review tool that uses natural language processing to analyze code quality, suggest improvements, and detect potential security vulnerabilities.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="Scikit-learn" variant="outlined" />
                     <Chip label="InfluxDB" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Grafana" variant="outlined" />
                     <Chip label="MQTT" variant="outlined" />
@@ -151,14 +151,14 @@ const Project = () => {
                     A machine learning system for predicting equipment failures using IoT sensor data. Implements ensemble methods and real-time alerting for industrial applications.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="Transformers" variant="outlined" />
                     <Chip label="OpenAI API" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="AST" variant="outlined" />
                     <Chip label="Github API" variant="outlined" />
@@ -187,14 +187,14 @@ const Project = () => {
                     A framework for distributed machine learning training across multiple nodes. Optimizes communication and reduces training time for large-scale deep learning models.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="PyTorch" variant="outlined" />
                     <Chip label="Ray" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Kubernetes" variant="outlined" />
                     <Chip label="Horovod" variant="outlined" />
@@ -223,14 +223,14 @@ const Project = () => {
                     A hybrid recommendation system combining collaborative filtering and content-based approaches. Features real-time personalization and explainable AI capabilities.
                   </Typography>
                 </CardContent>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ pl: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Python" variant="outlined" />
                     <Chip label="TensorFlow" variant="outlined" />
                     <Chip label="Apache Spark" variant="outlined" />
                   </Stack>
                 </Box>
-                <Box sx={{ p: .5 }}>
+                <Box sx={{ p: 1 }}>
                   <Stack direction="row" spacing={1}>
                     <Chip label="Elasticsearch" variant="outlined" />
                     <Chip label="FastAPI" variant="outlined" />
