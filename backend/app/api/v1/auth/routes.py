@@ -3,9 +3,13 @@ from sqlalchemy.orm import Session
 from app.api.v1.auth.schemas import LoginSchema, Token
 from app.api.v1.auth.services import authenticate_user, generate_tokens
 from app.api.v1.auth.utils import decode_token
-from app.db.session import get_db
+from db.session import get_db
 
 router = APIRouter()
+
+@router.get("/login")
+def login():
+    return {"msg": "Login"}
 
 @router.post("/login", response_model=Token)
 def login(data: LoginSchema, db: Session = Depends(get_db)):

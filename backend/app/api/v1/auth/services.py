@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from datetime import timedelta
 from app.api.v1.users.models import User
 from app.api.v1.auth.utils import verify_password, create_token
-from app.core.config import settings
+from core.config import settings
 
 def authenticate_user(email: str, password: str, db: Session) -> User:
     user = db.query(User).filter(User.email == email).first()
