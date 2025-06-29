@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 const Home: React.FC = () => {
   return (
     <Box>
-      <Section><Hero /></Section>
+      <Hero />
       <Section><About /></Section>
       <Section><Project /></Section>
       <Section><Expertise /></Section>
