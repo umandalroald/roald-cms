@@ -37,7 +37,7 @@ export default function Login() {
       localStorage.setItem('access_token', access_token);
 
       //redirect
-      window.location.href = '/blog';
+      window.location.href = '/admin';
     } catch (err: any) {
       setErrorMsg(err?.response?.data?.detail || 'Login failed');
     }
