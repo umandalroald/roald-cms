@@ -4,10 +4,14 @@ import {
   TextField,
   Typography,
   Button,
-  Container
+  Container,
+  Stack
 } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -27,11 +31,22 @@ export default function Login() {
           <Typography variant="h5" align="center" gutterBottom>
             Login
           </Typography>
+
           <TextField fullWidth margin="normal" label="Email" />
           <TextField fullWidth margin="normal" label="Password" type="password" />
-          <Button variant="contained" fullWidth sx={{ mt: 2 }}>
-            Sign In
-          </Button>
+
+          <Stack spacing={2} mt={2}>
+            <Button variant="contained" fullWidth>
+              Sign In
+            </Button>
+            <Button
+              variant="outlined"
+              fullWidth
+              onClick={() => navigate('/')}
+            >
+              Return to Home
+            </Button>
+          </Stack>
         </Paper>
       </Container>
     </Box>
