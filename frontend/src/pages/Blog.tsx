@@ -1,17 +1,29 @@
+import React from 'react';
 import {
-  Box,
-  Typography,
-  Container,
-  Paper
-  } from '@mui/material';
+    Box,
+    Container,
+    Paper,
+    Typography } from '@mui/material';
 
-export default function Blog() {
+const Blog: React.FC = () => {
   return (
-    <Box sx={{ py: 8 }}>
-      <Container maxWidth="md">
+    <Box
+      sx={{
+        width: '100vw',
+        minHeight: '100vh',
+        bgcolor: '#f9fafb',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
+        px: 2,
+        overflowX: 'hidden',
+      }}
+    >
+      <Container maxWidth="xl" disableGutters sx={{ maxWidth: '1200px', mx: 'auto' }}>
         <Paper elevation={3} sx={{ p: 4 }}>
           <Typography variant="h4" gutterBottom>
-            Blog
+            About Us
           </Typography>
           <Typography variant="body1" paragraph>
             Welcome to OXYGEN — a modern platform built with React, MUI, and FastAPI.
@@ -29,4 +41,6 @@ export default function Blog() {
       </Container>
     </Box>
   );
-}
+};
+
+export default Blog;

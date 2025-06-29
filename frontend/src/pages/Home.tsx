@@ -5,7 +5,6 @@ import About from '../components/About';
 import Project from '../components/Project';
 import Expertise from '../components/Expertise';
 import Article from '../components/Article';
-import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
   return (
@@ -15,7 +14,6 @@ const Home: React.FC = () => {
       <Section><Project /></Section>
       <Section><Expertise /></Section>
       <Section><Article /></Section>
-      <Section><Footer /></Section>
     </Box>
   );
 };

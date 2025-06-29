@@ -17,6 +17,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const drawerWidth = 240;
 const navItems = [
@@ -130,6 +131,7 @@ export default function MainLayout({ window }: Props) {
       {/* Route Content */}
       <Box component="main" sx={{ mt: isHidden ? 0 : { xs: 7, sm: 8 }, width: '100%' }}>
         <Outlet />
+        {!isHidden && <Footer />}
       </Box>
     </Box>
   );
