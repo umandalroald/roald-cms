@@ -1,33 +1,50 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
 import MainLayout from './layouts/MainLayout';
-// import AuthLayout from './layouts/AuthLayout';
-// import AdminLayout from './layouts/AdminLayout';
+import AdminLayout from './layouts/AdminLayout';
 
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Login from './features/auth/Login';
-// import Register from './features/auth/Register';
-// import Dashboard from './features/admin/Dashboard';
-// import Users from './features/admin/Users';
+
+// Lazy load admin pages
+const Dashboard = lazy(() => import('./features/admin/pages/Dashboard'));
+const Users = lazy(() => import('./features/admin/pages/UserList'));
+const Posts = lazy(() => import('./features/admin/pages/PostList'));
+const Settings = lazy(() => import('./features/admin/pages/Settings'));
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        {/* 🔓 Public route with no layout */}
-        <Route path="/login" element={<Login />} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          {/* 🔓 Public route */}
+          <Route path="/login" element={<Login />} />
 
-        {/* 🌐 Main site pages with layout */}
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="blog" element={<Blog />} />
-        </Route>
-      </Routes>
+          {/* 🌐 Main public layout */}
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="blog" element={<Blog />} />
+          </Route>
+
+          {/* 🔐 Admin layout */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="users" element={<Users />} />
+            <Route path="posts" element={<Posts />} />
+            <Route path="settings" element={<Settings />} />
+            <Route path="*" element={<Navigate to="/admin" />} />
+          </Route>
+
+          {/* ❌ Fallback route */}
+          <Route path="*" element={<div>404 Not Found</div>} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
 
-export default App; // ✅ Required for default import
+export default App;

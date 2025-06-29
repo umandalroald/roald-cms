@@ -4,7 +4,8 @@
 import { useRoutes } from 'react-router-dom';
 
 // Import authentication-related route definitions from the auth feature
-import authRoutes from '../features/auth/routes';
+import authRoutes from '../features/auth';
+import adminRoutes from '../features/admin/routes';
 
 /**
  * Define all application routes in a single array.
@@ -13,6 +14,7 @@ import authRoutes from '../features/auth/routes';
  */
 const allRoutes = [
   ...authRoutes, // 👈 Feature-based route group (e.g. /login, /register)
+  ...adminRoutes, // Admin
   {
     path: '*',
     element: <div>404 Not Found</div> // 👈 Displayed when no route matches
