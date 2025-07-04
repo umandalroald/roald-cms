@@ -9,6 +9,8 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Login from './features/auth/Login';
 
+import NotFoundPage from './pages/NotFoundPage';
+
 // Lazy load admin pages
 const Dashboard = lazy(() => import('./features/admin/pages/Dashboard'));
 const Users = lazy(() => import('./features/admin/pages/UserList'));
@@ -40,7 +42,7 @@ function App() {
           </Route>
 
           {/* ❌ Fallback route */}
-          <Route path="*" element={<div>404 Not Found</div>} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

@@ -11,6 +11,7 @@ export default function NotFoundPage() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      width="100%"
       height="100vh"
       textAlign="center"
       bgcolor="#f5f5f5"

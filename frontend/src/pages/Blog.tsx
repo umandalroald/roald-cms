@@ -23,7 +23,7 @@ const Blog: React.FC = () => {
       <Container maxWidth="xl" disableGutters sx={{ maxWidth: '1200px', mx: 'auto' }}>
         <Paper elevation={3} sx={{ p: 4 }}>
           <Typography variant="h4" gutterBottom>
-            About Us
+            Blog
           </Typography>
           <Typography variant="body1" paragraph>
             Welcome to OXYGEN — a modern platform built with React, MUI, and FastAPI.
